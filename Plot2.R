@@ -28,7 +28,7 @@ Global_Active_Power <- as.numeric(newdataset$Global_active_power)
 
 # plotting histogram #
 
-plot2 <- plot(Date_Time, Global_Active_Power, type = "l", lty = "solid", xlab = " ", ylab = "Global Active Power(kilowatts)")
+plot2 <- plot(Date_Time, Global_Active_Power, type = "l", lty = "solid", cex=0.2, xlab = " ", ylab = "Global Active Power(kilowatts)")
 plot2
 
 
