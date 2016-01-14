@@ -3,7 +3,6 @@
 options(width=2000)
 
 library(scales)
-library(ggplot2)
 
 household_power_consumption <- read.table(file.choose(), header = T, sep = ";")
 
@@ -46,4 +45,6 @@ legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=
 
 plot(Date_Time, Global_Reactive_Power, type="l", xlab="datetime", ylab="Global_reactive_power")
 
-
+# saving image
+dev.copy(png, file="plot4.png", height=480, width=480)
+dev.off()
